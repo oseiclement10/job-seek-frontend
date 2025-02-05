@@ -1,6 +1,7 @@
 import Header from "@/components/Header"
 import JobCard from "./components/JobCard"
-import { mockJobs } from "./data"
+import { mockJobs, mockTalents } from "./data"
+import TalentCard from "./components/TalentCard"
 
 
 const Hero = () => {
@@ -12,7 +13,7 @@ const Hero = () => {
                     <h1 className="w-1/2 mb-4 text-white text-7xl font-dmsans ">Connecting talents with the right Jobs</h1>
                     <p>Find the right  person for the job seemlessly by browsing through  talents</p>
 
-                    <p className="mb-5 text-lg  font-poppins">
+                    <p className="mb-5 text-lg font-poppins">
                         Connect with top freelancers and clients, and manage your meetings seamlessly
                     </p>
 
@@ -26,17 +27,18 @@ const Hero = () => {
                     <JobCard job={mockJobs[0]} type="vertical" />
                     <div className="flex flex-col gap-4">
                         <JobCard job={mockJobs[1]} type="vertical" />
-                        <JobCard job={mockJobs[3]} type="horizontal" />
+                        <TalentCard talent={mockTalents[0]} />
                     </div>
                     <div className="flex flex-col gap-4">
-                        <JobCard job={mockJobs[2]} type="horizontal" />
-                        <JobCard job={mockJobs[1]} type="horizontal" />
+                        <TalentCard talent={mockTalents[1]} />
+                        <TalentCard talent={mockTalents[2]} />
+
                     </div>
                     <div className="flex flex-col gap-4">
-                        <JobCard job={mockJobs[1]} type="vertical" />
-                        <JobCard job={mockJobs[0]} type="horizontal" />
+                        <JobCard job={mockJobs[2]} type="vertical" />
+                        <TalentCard talent={mockTalents[3]} />
                     </div>
-                    <JobCard job={mockJobs[2]} type="vertical" />
+                    <JobCard job={mockJobs[3]} type="vertical" />
                 </div>
 
             </section>

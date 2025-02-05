@@ -11,13 +11,15 @@ const JobCard = ({ job, type }) => {
     )
     return (
         <div className={cardStyling}>
-            <img src={job.image} alt={job.name} className='absolute inset-0 w-full h-full object-cover' />
+            <img src={job.image} alt={job.name} className='absolute inset-0 object-cover w-full h-full' />
             <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-transparent to-transparent"></div>
-            <h2 className="relative font-poppins mt-2  w-5/6 text-xl text-white">
+            <h2 className="relative w-5/6 mt-2 text-xl text-white font-poppins">
                 {job.name}
             </h2>
         </div>  
     )
 }
+
+
 
 export default JobCard
