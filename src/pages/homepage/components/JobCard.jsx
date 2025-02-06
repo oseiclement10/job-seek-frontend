@@ -6,7 +6,7 @@ import { paths } from '@/routes/routes'
 
 const JobCard = ({ job, type }) => {
     const cardStyling = clsx(
-        'rounded-3xl shadow-sm relative font-poppins px-6 py-4 overflow-hidden cursor-pointer hover:-translate-y-2 transition-smooth hover:shadow-md',
+        'rounded-3xl shadow-sm relative font-poppins px-6 py-4 overflow-hidden cursor-pointer min-w-[250px] hover:-translate-y-2 transition-smooth hover:shadow-md',
         {
             'w-[280px] h-[380px]': type == "vertical",
             'h-[190px] w-[280px]': type == "horizontal",

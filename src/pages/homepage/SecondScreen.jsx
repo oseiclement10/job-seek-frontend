@@ -18,7 +18,7 @@ const SecondScreen = () => {
                 <span className='w-[6px] h-[6px] bg-white rounded-full mr-1' />  Explore <span className='w-[6px] ml-1 h-[6px] bg-white rounded-full' />
             </span>
 
-            <h2 className='mb-4 text-5xl font-semibold text-center font-dmsans'>Browse Our Featured {value == 1 ? "Jobs" : "Talents"}</h2>
+            <h2 className='mb-4 text-4xl font-semibold text-center lg:text-5xl font-dmsans'>Browse Our Featured {value == 1 ? "Jobs" : "Talents"}</h2>
 
             <Tabs value={value} onChange={handleChange} centered className='font-poppins'>
                 <Tab label="Talents" value={0} />
