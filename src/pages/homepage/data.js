@@ -13,18 +13,26 @@ export const mockJobs = [
   {
     name: "Business Consultancy",
     image: businessConsultancyImg,
+    mode: "Hybrid",
+    description:"We provide business consultancy services to help businesses grow and succeed. "
   },
   {
     name: "Graphic Design",
     image: graphicDesign,
+    mode: "In person",
+    description:"We provide business consultancy services to help businesses grow and succeed. "
   },
   {
     name: "Virtual Assistance",
     image: virtualAssistance,
+    mode: "Remote",
+    description:"Basic virtual assistanceship Job"
   },
   {
     name: "UI Design",
     image: uiDesigner,
+    mode: "Remote",
+    description:"We provide business consultancy services to help businesses grow and succeed. "
   },
 ];
 
