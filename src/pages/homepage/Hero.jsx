@@ -6,7 +6,7 @@ import TalentCard from "./components/TalentCard"
 
 const Hero = () => {
     return (
-        <section className="min-h-dvh bg-gradient-to-b from-50% from-[#0C1D17] via-emerald-800 to-emerald-600">
+        <section className="min-h-dvh bg-gradient-to-b from-30% from-[#0C1D17] via-emerald-800 to-emerald-400">
             <Header />
             <section>
                 <div className="flex flex-col items-center justify-center mt-12 mb-20 text-lg text-center text-gray-300 font-poppins">

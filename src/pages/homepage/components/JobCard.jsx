@@ -1,6 +1,8 @@
 import React from 'react'
 import clsx from 'clsx'
-import { LocationOn } from '@mui/icons-material'
+import { LocationOn, Link as LinkIcon } from '@mui/icons-material'
+import { Link  } from 'react-router-dom'
+import { paths } from '@/routes/routes'
 
 const JobCard = ({ job, type }) => {
     const cardStyling = clsx(
@@ -20,9 +22,18 @@ const JobCard = ({ job, type }) => {
                         {job?.name}
                     </h2>
                     <p className='text-slate-200'> {job?.description} </p>
-                    <p className="px-4 py-1 mt-4 text-sm bg-white rounded-sm shadow-sm text-emerald-950 w-fit font-poppins">
-                        {job?.mode}
+
+                    <p className='mt-2 text-sm text-emerald-200/80 '>
+                        posted by {job?.clientName}
                     </p>
+
+                    <div className="flex items-center justify-between mt-4">
+                        <p className="px-4 py-1 text-xs bg-slate-200 text-emerald-950 w-fit font-poppins">
+                            {job?.mode}
+                        </p>
+                        <Link to={paths.scheduleJob.replace(":jobId", job.id)} className='px-4 py-1 text-sm text-white rounded-md shadow-md bg-emerald-600 hover:bg-emerald-800 transition-smooth active:opacity-10'>Schedule <LinkIcon sx={{ fontSize: 16 }} /> </Link>
+                    </div>
+
                 </div>
             </div>
 

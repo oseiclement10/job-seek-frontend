@@ -11,28 +11,39 @@ import lady3 from "@/assets/images/girl.png";
 
 export const mockJobs = [
   {
+    id: 1,
     name: "Business Consultancy",
     image: businessConsultancyImg,
     mode: "Hybrid",
-    description:"We provide business consultancy services to help businesses grow and succeed. "
+    description:
+      "We provide business consultancy services to help businesses grow and succeed. ",
+    clientName: "Aisha Khan",
   },
   {
+    id: 2,
     name: "Graphic Design",
     image: graphicDesign,
     mode: "In person",
-    description:"We provide business consultancy services to help businesses grow and succeed. "
+    description:
+      "We provide business consultancy services to help businesses grow and succeed. ",
+    clientName: "Jane Doe",
   },
   {
+    id: 3,
     name: "Virtual Assistance",
     image: virtualAssistance,
     mode: "Remote",
-    description:"Basic virtual assistanceship Job"
+    description: "Basic virtual assistanceship Job",
+    clientName: "Melis Arkan",
   },
   {
+    id: 4,
     name: "UI Design",
     image: uiDesigner,
     mode: "Remote",
-    description:"We provide business consultancy services to help businesses grow and succeed. "
+    description:
+      "We provide business consultancy services to help businesses grow and succeed. ",
+    clientName: "Ander Sewer",
   },
 ];
 
