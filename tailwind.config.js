@@ -7,6 +7,9 @@ module.exports = {
         dmsans: ["DM Sans", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },
+      colors: {
+        darkGreen: "#0C1D17",
+      },
     },
   },
   plugins: [],

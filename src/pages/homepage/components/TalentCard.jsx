@@ -7,7 +7,7 @@ const TalentCard = ({ talent }) => {
     const isAvailable = talent?.availability == "available";
     
     return (
-        <div className="px-4 w-[280px] cursor-pointer transition-smooth hover:-translate-y-1 hover:shadow-md  font-poppins flex flex-col justify-between min-h-[150px] py-3 bg-white shadow-sm rounded-xl">
+        <div className="px-4  cursor-pointer transition-smooth hover:-translate-y-1 hover:shadow-md  font-poppins flex flex-col justify-between min-h-[150px] py-3 bg-white shadow-sm rounded-xl">
             <div className="grid grid-cols-4">
                 <div className="col-span-1">
                     <img src={talent.image} alt={talent.name} className='w-12 h-12 rounded-full' />
