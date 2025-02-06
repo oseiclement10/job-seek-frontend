@@ -3,6 +3,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import FeaturedJobs from './FeaturedJobs';
 import FeaturedTalents from './FeaturedTalents';
+import TransitionWrapper from './components/TransitionWrapper';
 
 const SecondScreen = () => {
     const [value, setValue] = React.useState(0);
@@ -25,8 +26,8 @@ const SecondScreen = () => {
             </Tabs>
 
             <section className='pt-8 mx-auto min-h-[300px] lg:w-5/6'>
-                {value == 0 && (<FeaturedTalents />)}
-                {value == 1 && (<FeaturedJobs />)}
+                {value == 0 && ( <TransitionWrapper> <FeaturedTalents /></TransitionWrapper>)}
+                {value == 1 && ( <TransitionWrapper> <FeaturedJobs /> </TransitionWrapper> )}
             </section>
 
         </section>
